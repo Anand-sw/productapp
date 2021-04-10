@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row">
+      
+        <div id="cat" class="col-sm-4 category">
+          <div class="product__category">
+            <h5 id="cat">Display Available</h5>
+            <a href="#cat">Check Category</a><br/>
+            <a href="#price">Check Price</a><br/><br/>       
+          </div>
+          <h5>Product Category</h5>
+            <ul name="cat" *ngFor="let products of product" [ngSwitch]="products.p_category">
+                <li *ngSwitchCase="'Premium'">{{products.p_name}}</li>            
+            </ul>
+            <br/><br/>
+            <div id="price">
+              <h5>Product price</h5>
+              <ul *ngFor="let products of product; let i=index"> 
+                <li *ngIf="products.p_cost >20">
+                  {{i+1}} {{products.p_name}} {{products.p_cost}}
+                </li>
+              </ul>
+          </div>
+        </div>
+        
+      <div class="col-sm-8">
+    
+  
+<div className="home">
+    <div className="home__container">        
+        <div className="home__row">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/Apple.jpg" class="card-img-top card__image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Apple</h5>
+                  <p class="card-text">Imported from Swiss</p>
+                  <p>Price: ₹ 30</p>
+                  <a href="/checkout" class="btn btn-primary">Add to Card</a>
+                </div>
+              </div>
+            
+        </div>
+        <div className="home__row">
+            <div className="home__row">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/mango1.jpg" class="card-img-top card__image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mango</h5>
+                      <p class="card-text">Farmed at Selam</p>
+                      <p>Price: ₹ 50</p>
+                      <a href="#" class="btn btn-primary">Add to Card</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="assets/img/orange1.jpg" class="card-img-top card__image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Orange</h5>
+                      <p class="card-text">Imported from Nagpur</p>
+                      <p>Price: ₹ 25</p>
+                      <a href="#" class="btn btn-primary">Add to Card</a>
+                      
+                    </div>
+                  </div>            
+              </div>
+        <div className="home__row">
+            <div className="home__row">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/banana.jpg" class="card-img-top card__image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bananna</h5>
+                      <p class="card-text">Imported from Swiss</p>
+                      <p>Price: ₹ 5</p>
+                      <a href="#" class="btn btn-primary">Add to Card</a>
+                    </div>
+                  </div>
+        </div>
+    </div>
+</div>
+</div>     
+</div>
+
+</div>
